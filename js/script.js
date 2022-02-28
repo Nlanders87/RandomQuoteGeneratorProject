@@ -73,15 +73,15 @@ function printQuote() {
       
 //Conditional statements to compare the citation, year and tag property values to an empty string. Then assigns a temperate literal to print to the page when it evaluates to true. 
 
-      if (quotes.citation !== emptyProp){                                     
+      if (firstQuote.citation !== emptyProp){                                     
        markup += `<span class = "citation">${firstQuote.citation}</span>`;     
       } 
 
-      if (quotes.year !== emptyProp) {
+      if (firstQuote.year !== emptyProp) {
        markup += `<span class = "year">${firstQuote.year}</span>`;
       } 
 
-      if (quotes.tag !== emptyProp) {
+      if (firstQuote.tag !== emptyProp) {
        markup += `<span>, ${firstQuote.tag}</span>`;
       } 
       markup += `</p>`; //adds the closing the paragraph tag to the html string
